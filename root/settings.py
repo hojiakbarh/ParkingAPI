@@ -35,7 +35,7 @@ SECRET_KEY = 'django-insecure-c1sa-@b9m7r(dvjluf)wbq95f!bf2e8r4-46y-_bb6=b5b!po$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["https://parkingapi-0wvz.onrender.com", 'parkingapi-0wvz.onrender.com']
 
 
 # Application definition
