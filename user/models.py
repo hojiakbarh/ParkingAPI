@@ -1,10 +1,9 @@
 from django.contrib.auth.hashers import make_password
-from django.db import transaction
 from django.db.models import DateTimeField
 from django.contrib.auth.models import AbstractUser, UserManager
 from django.db.models import TextChoices, Model, ForeignKey, CASCADE
 from django.db.models.fields import CharField, PositiveIntegerField, TextField
-from rest_framework.fields import DecimalField, BooleanField, JSONField
+from rest_framework.fields import DecimalField, BooleanField
 
 
 # Create your models here.
