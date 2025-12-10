@@ -8,7 +8,7 @@ from drf_spectacular.utils import extend_schema
 from rest_framework import status
 from rest_framework.decorators import permission_classes
 from rest_framework.generics import CreateAPIView, UpdateAPIView, ListAPIView, DestroyAPIView, \
-    RetrieveUpdateDestroyAPIView, get_object_or_404, RetrieveAPIView, ListCreateAPIView
+    RetrieveUpdateDestroyAPIView, get_object_or_404, ListCreateAPIView
 from rest_framework.parsers import MultiPartParser, FormParser
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.response import Response
