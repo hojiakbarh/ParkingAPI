@@ -185,19 +185,19 @@ AUTH_USER_MODEL = 'user.User'
 
 
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = "hoshimjonovhojiakbar008@gmail.com"
-EMAIL_HOST_PASSWORD = "sgwuuhbeecuxacmb"
-EMAIL_USE_SSL = False
+EMAIL_BACKEND = os.getenv('EMAIL_BACKEND', 'django.core.mail.backends.console.EmailBackend')
+EMAIL_HOST = os.getenv('EMAIL_HOST', 'smtp.gmail.com')
+EMAIL_PORT = os.getenv('EMAIL_PORT', 465)
+EMAIL_USE_TLS = os.getenv('EMAIL_USE_TLS', True)
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER', '<EMAIL>')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD', '<PASSWORD>')
+EMAIL_USE_SSL = os.getenv('EMAIL_USE_SSL', True)
 
-REDIS_HOST = 'localhost'
-REDIS_PORT = 6379
-REDIS_DB = 0
+REDIS_HOST = os.getenv('REDIS_HOST', 'localhost')
+REDIS_PORT = os.getenv('REDIS_PORT', 6379)
+REDIS_DB = os.getenv('REDIS_DB', 0)
 
-LOGIN_URL = 'login'
+LOGIN_URL = os.getenv('LOGIN_URL', '/login')
 
 
 
