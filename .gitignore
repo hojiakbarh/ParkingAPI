@@ -2,3 +2,9 @@
 .venv
 .env
 .env.*
+__pycache__/
+*.pyc
+pytest.ini
+db.sqlite3
+Makefile
+requirements.txt
